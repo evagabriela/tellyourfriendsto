@@ -41,7 +41,8 @@ class Tell
     content.split(" ").map do |word|
       if word.include?("http")
         if word.include?("youtube.com")
-          "<iframe width='560' height='315' src='#{word}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+          src = word.gsub('watch', 'embed')
+          "<iframe width='560' height='315' src='#{src}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
         else
           "<a target='_blank' href='#{word}'>#{word}</a>"
         end
@@ -53,8 +54,8 @@ class Tell
 end
 
 def load_tells
-  # make it use relative path of arg?
-  @raw_text = File.read("src/scripts/tells.txt")
+  path = File.join(File.dirname(__FILE__), "tells.txt")
+  @raw_text = File.read(path)
 end
 
 def extract_tells
