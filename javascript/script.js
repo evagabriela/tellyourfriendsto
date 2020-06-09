@@ -16,4 +16,6 @@ function showRandomTell() {
 
 $(document).ready(function(){
   showRandomTell();
+
+  $('.hashtag a').click(function(){ showRandomTell(); });
 });
