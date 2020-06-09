@@ -20,3 +20,6 @@ You can just manually write your own snippets instead of generating them.
 Just `cat` all the HTML snippets and manually update the contents of index.html if there are changes.
 
 This page uses GitHub pages so you can update it simply by pushing to Github's master branch.
+
+For debugging production, just add `show=1` as a URL parameter to see all tells at once.
+E.g. `https://tellyourfriendsto.github.io/?show=1`
