@@ -14,6 +14,9 @@ You can interact with tells by clicking:
 4. Watching a video
 
 The site just loads all the HTML hidden from view, and then uses jquery to randomly pick a tell (sometimes scoped to a hashtag).
-There's a ruby script that helps generate the HTML from plain text.
+There's a ruby script that helps generate the HTML from plain text - this is just a helper.
+The HTML is saved into snippets which you can modify and are the main source of truth for the site.
+You can just manually write your own snippets instead of generating them.
+Just `cat` all the HTML snippets and manually update the contents of index.html if there are changes.
 
 This page uses GitHub pages so you can update it simply by pushing to Github's master branch.
