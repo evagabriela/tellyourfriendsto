@@ -18,7 +18,7 @@ class Tell
 
   def persist
     filename = text_without_hashtags.split(" ")[0..4].join("_").gsub(/\W/, '').downcase + ".html"
-    File.open("html_snippets/" + filename, "w") { |f| f.write self.to_html }
+    File.open("src/html_snippets/" + filename, "w") { |f| f.write self.to_html }
   end
 
   private
@@ -54,7 +54,7 @@ end
 
 def load_tells
   # make it use relative path of arg?
-  @raw_text = File.read("scripts/tells.txt")
+  @raw_text = File.read("src/scripts/tells.txt")
 end
 
 def extract_tells
