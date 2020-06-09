@@ -1,6 +1,6 @@
 # Getting Started
 
-This site is a static HTML site that just randomly shows 1 element at random on page load.
+https://tellyourfriendsto.github.io/ is a static HTML site that just randomly shows 1 element at random on page load.
 Javascript will randomly pick an element and toggle the CSS to show it.
 
 Each snippet is called a 'tell'.

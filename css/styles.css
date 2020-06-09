@@ -1,1 +1,10 @@
 /* main css */
+
+
+div.tell {
+  display: none;
+}
+
+div.tell.selected {
+  display: block;
+}
