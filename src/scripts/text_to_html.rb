@@ -67,7 +67,7 @@ def generate_html
 end
 
 def generate_index
-  // concat all the html snippets and merge into index.html.template
+  # concat all the html snippets and merge into index.html.template
 end
 
 load_actions
