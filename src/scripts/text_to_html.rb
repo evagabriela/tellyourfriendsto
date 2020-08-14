@@ -1,14 +1,14 @@
 
-class Tell
+class Action
   def initialize(text)
     @text = text
   end
 
   def to_html
-    css = ('tell ' + hashtags.map { |h| h.downcase }.join(' ')).strip
-    tell_html = augment(text_without_hashtags)
+    css = ('action ' + hashtags.map { |h| h.downcase }.join(' ')).strip
+    action_html = augment(text_without_hashtags)
     "<div class='#{css}'>
-      <p>#{tell_html}</p>
+      <p>#{action_html}</p>
       <span class='hashtag'>
         #{hashtag_html}
       </span>
@@ -53,20 +53,25 @@ class Tell
   end
 end
 
-def load_tells
-  path = File.join(File.dirname(__FILE__), "tells.txt")
+def load_actions
+  path = File.join(File.dirname(__FILE__), "actions.txt")
   @raw_text = File.read(path)
 end
 
-def extract_tells
-  @tells = @raw_text.split("\n\n").reject { |t| t.strip.empty? }.map { |t| Tell.new(t) }
+def extract_actions
+  @actions = @raw_text.split("\n\n").reject { |t| t.strip.empty? }.map { |t| Action.new(t) }
 end
 
 def generate_html
-  puts @tells.map { |t| t.to_html }.join
+  puts @actions.map { |t| t.to_html }.join
 end
 
-load_tells
-extract_tells
+def generate_index
+  // concat all the html snippets and merge into index.html.template
+end
+
+load_actions
+extract_actions
 generate_html
-@tells.each { |t| t.persist }
+@actions.each { |t| t.persist }
+generate_index
