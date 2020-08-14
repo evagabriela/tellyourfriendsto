@@ -8,12 +8,11 @@ class Action
     css = ('action ' + hashtags.map { |h| h.downcase }.join(' ')).strip
     action_html = augment(text_without_hashtags)
     "<div class='#{css}'>
-      <p>#{action_html}</p>
-      <span class='hashtag'>
-        #{hashtag_html}
-      </span>
-    </div>
-    "
+  <p>#{action_html}</p>
+  <span class='hashtag'>
+    #{hashtag_html}
+  </span>
+</div>"
   end
 
   def persist
@@ -34,7 +33,7 @@ class Action
   def hashtag_html
     hashtags.map do |hashtag|
       "<a href='##{hashtag.downcase}'>##{hashtag}</a>"
-    end.join("\n")
+    end.join("\n    ")
   end
 
   def augment(content)
