@@ -96,7 +96,7 @@ section {
 	/*padding: 10px 30px;*/
 	background-color: #000;
 	/*position: fixed;*/
-    width: 90%;
+    /*width: 90%;*/
     color: #fff;
     border: 2px solid black;
 }
@@ -116,11 +116,30 @@ section {
 	width: 10%;
 	/*border-style: solid;*/
 	margin-left: auto;
-	background-color: #c0cce8;
+	background-color: #000;
     border: 2px solid black;
 /*	writing-mode: vertical-rl;
 text-orientation: mixed;*/
 	/*height: 100vh;*/
+	writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: left;
+}
+
+
+.vertical-navbar a {
+	color: #fff;
+}
+
+.vertical-navbar li {
+	display: inline-block;
+	padding: 20px;
+}
+
+.navbar-bottom {
+	position: absolute;
+    bottom: 70%;
+    margin-left: 90%;
 }
 
 #action-card-center {
@@ -163,7 +182,7 @@ text-orientation: mixed;*/
 	border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 15px;
-	padding: 45px;
+	padding: 15% 50px;
 }
 
 .action-content a {
