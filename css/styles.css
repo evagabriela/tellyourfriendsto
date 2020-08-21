@@ -69,18 +69,49 @@ Layout
 section {
 	/*padding: 105px 30px;*/
 }
+
+.action-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+/*	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    -ms-flex-pack: center;*/
+	        /*justify-content: center;*/
+	       justify-content: left;
+	-ms-flex-wrap:  wrap;
+	    flex-wrap:  wrap;
+}
+
 .top-banner{
 	/*padding: 10px 30px;*/
 	background-color: #000;
-	position: fixed;
+	/*position: fixed;*/
     width: 90%;
     color: #fff;
+    border: 2px solid black;
 }
+
+.top-banner h2{
+	font-family: Neue Plak;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
 
 .vertical-navbar {
 	width: 10%;
 	/*border-style: solid;*/
 	margin-left: auto;
+	background-color: #c0cce8;
+    border: 2px solid black;
 /*	writing-mode: vertical-rl;
 text-orientation: mixed;*/
 	/*height: 100vh;*/
@@ -88,9 +119,10 @@ text-orientation: mixed;*/
 
 #action-card-center {
 	background-color: #c0cce8;
-	padding: 105px 30px;
-	    width: 90%;
+	padding: 50px 30px;
+	width: 90%;
 }
+
 .center-content {
 	/*display: -webkit-box;
 	display: -ms-flexbox;
@@ -107,15 +139,53 @@ text-orientation: mixed;*/
 	    flex-wrap:  wrap;*/
 }
 
+
+
 .action-subtitle {
 	text-align: left;
-	margin: 25px 75px;
+	/*margin: 25px 75px;*/
+	font-family: Neue Plak;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 41px;
+	color: #000000;
+	margin-left: 50px;
 }
 
 .action-content{
-	border-style: solid;
-	border-radius: 25px;
+	border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
 	padding: 45px;
+}
+
+.action-content a {
+	font-family: Blackest Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+.action-content h2 {
+	font-family: Neue Plak;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	/* or 125% */
+	color: #000000;
+}
+
+.action-phrase {
+	margin-top: 90px;
+}
+
+.align-content {
+	text-align: left;
 }
 
 .grid-wrapper {
