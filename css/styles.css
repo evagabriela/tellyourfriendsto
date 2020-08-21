@@ -71,11 +71,10 @@ html, body {
 }
 
 section {
-	/*padding: 105px 30px;*/
 }
 
-.action-wrapper {
-	height:     auto;       /* These two lines were the key. */
+.wrapper {
+	height: auto;      
     min-height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -93,10 +92,7 @@ section {
 }
 
 .top-banner{
-	/*padding: 10px 30px;*/
 	background-color: #000;
-	/*position: fixed;*/
-    /*width: 90%;*/
     color: #fff;
     border: 2px solid black;
 }
@@ -114,13 +110,9 @@ section {
 
 .vertical-navbar {
 	width: 10%;
-	/*border-style: solid;*/
 	margin-left: auto;
 	background-color: #000;
     border: 2px solid black;
-/*	writing-mode: vertical-rl;
-text-orientation: mixed;*/
-	/*height: 100vh;*/
 	writing-mode: vertical-rl;
     text-orientation: mixed;
     text-align: left;
@@ -142,7 +134,7 @@ text-orientation: mixed;*/
     margin-left: 90%;
 }
 
-#action-card-center {
+#action-card {
 	background-color: #c0cce8;
 	padding: 50px 30px;
 	width: 90%;
@@ -168,7 +160,6 @@ text-orientation: mixed;*/
 
 .action-subtitle {
 	text-align: left;
-	/*margin: 25px 75px;*/
 	font-family: Neue Plak;
 	font-style: normal;
 	font-weight: bold;
@@ -183,6 +174,7 @@ text-orientation: mixed;*/
     box-sizing: border-box;
     border-radius: 15px;
 	padding: 15% 50px;
+	text-align: left;
 }
 
 .action-content a {
@@ -201,7 +193,6 @@ text-orientation: mixed;*/
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 25px;
-	/* or 125% */
 	color: #000000;
 }
 
@@ -209,7 +200,7 @@ text-orientation: mixed;*/
 	margin-top: 90px;
 }
 
-.align-content {
+.action-headline {
 	text-align: left;
 }
 
@@ -263,55 +254,9 @@ ul {
 }
 
 /* ----------------------------------------
-Header
-------------------------------------------- */
-nav	{
-	background-color: #fff;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-}
-
-
-nav li {
-	display: inline-block;
-}
-
-nav a {
-	font-weight: 600;
-	padding: 10px 60px;
-	letter-spacing: 0.75px;
-	color: #7B98AA;
-}
-
-
-header {
-	/*padding-top: 30px;*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*background-image: url('../images/home_header_bg.jpg');*/
-	background-attachment: fixed;
-	height: 100vh;
-}
-
-h1 a,
-h1 a:hover,
-header h2 {
-	/*color: #fff;*/
-	color: #000
-}
-
-
-header h1 {
-	font-size: 37px;
-	letter-spacing: 12px;
-}
-
-/* ----------------------------------------
 About
 ------------------------------------------- */
-.about article {
+./*about article {
 	max-width: 800px;
 	font-size: 17.6px;
 	line-height: 1.1;
@@ -320,12 +265,12 @@ About
 .about-content {
 	margin-top: 45px;
 }
-
+*/
 
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
-button {
+/*button {
 	cursor: pointer;
 	border: 2px solid #44545E;
 	color: #44545E;
@@ -347,93 +292,22 @@ button:hover {
 .grid-wrapper button {	
 	margin-top: 30px;
 }
-
-/* ----------------------------------------
-Form
-------------------------------------------- */
-form {
-	margin-top: 45px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-
-input {
-	border: 2px solid #44545E;
-    margin-bottom: 12px;
-    padding: 10px;
-}
-
-textarea {
-	width: 100%;
-	border: 2px solid #44545E;
-	margin-bottom: 12px;
-	padding: 10px 10px;
-	outline: 0;
-	height:30vh;
-}
-
-form button {
-	width: 100%;
-}
-
-::-webkit-input-placeholder {
-   color: #7C878E;
-   text-transform: uppercase;
-   letter-spacing: 0.75px;
-   font-size: 12.299px;
-   font-weight: 600;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #7C878E;
-   text-transform: uppercase;
-   letter-spacing: 0.75px;
-   font-size: 12.299px;
-   font-weight: 600;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #7C878E;
-   text-transform: uppercase;
-   letter-spacing: 0.75px;
-   font-size: 12.299px;
-   font-weight: 600;
-}
-
-:-ms-input-placeholder {  
-   color: #7C878E;
-   text-transform: uppercase;
-   letter-spacing: 0.75px;
-   font-size: 12.299px;
-   font-weight: 600; 
-}
-
-#contact {
-	padding-top: 24px;
-}
+*/
 
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 
-footer {
-	background-color: #CDF3F6;
+/*footer {
 	overflow: auto;
-
 }
 
 footer .content-center-wrap {
-	padding: 30px 15px;
+	padding: 5px 15px;
+	background-color: #000;
+    color: #fff;
+    border: 2px solid black;
+}
 }
 
 .social-links a {
@@ -458,7 +332,7 @@ footer input {
 }
 
 .copyright {
-	border-top: 2px solid #44545E;
 	padding: 15px 0 3px;
 
-}
+
+}*/
