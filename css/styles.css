@@ -17,7 +17,7 @@ Base Styles
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Neue Plak', sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #44545E;
@@ -36,6 +36,7 @@ Typography
 ------------------------------------------- */
 h1,h2,h3,h4 {
 	font-weight: 600;
+	font-family: Neue Plak;
 }
 
 h2 {
@@ -56,7 +57,7 @@ a:hover {
 }
 
 p {
-	font-family: 'Lato', sans-serif;
+	font-family: Neue Plak;
 	text-transform: none;
 	font-weight: 400;
 	line-height: 1.4;
@@ -95,12 +96,10 @@ section {
 	background-color: #000;
     color: #fff;
     border: 2px solid black;
-    font-family: Neue Plak;
     font-size: 1.3rem;
 }
 
 .top-banner h2{
-	font-family: Neue Plak;
     font-style: normal;
     font-weight: 800;
     font-size: 10px;
@@ -138,8 +137,10 @@ section {
 
 #action-card {
 	background-color: #c0cce8;
-	padding: 50px 30px;
+	padding: 30px 30px 0 30px;
 	width: 90%;
+	overflow-wrap: break-word;
+}
 }
 
 .center-content {
@@ -169,13 +170,14 @@ section {
 	line-height: 41px;
 	color: #000000;
 	margin-left: 50px;
+	letter-spacing: 0.15rem;
 }
 
 .action-content{
 	border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 15px;
-	padding: 15% 50px;
+	padding: 15em 50px 5em;
 	text-align: left;
 }
 
@@ -199,7 +201,28 @@ section {
 }
 
 .action-phrase {
-	margin-top: 90px;
+	margin-top: 10em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.action-phrase p{
+	padding: 0 5px 0 5px;
+	font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Neue Plak;
+	font-style: normal;
+}
+
+p.firstpar {
+  margin-top: 0;
+}
+p.nextpar {
+  margin-top: -0.5em;
 }
 
 .action-headline {
