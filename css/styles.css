@@ -96,7 +96,7 @@ section {
 	background-color: #000;
     color: #fff;
     border: 2px solid black;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .top-banner h2{
@@ -130,17 +130,46 @@ section {
 }
 
 .navbar-bottom {
-	position: absolute;
+	position: fixed;
     bottom: 70%;
     margin-left: 90%;
 }
 
 #action-card {
-	background-color: #c0cce8;
-	padding: 30px 30px 0 30px;
+	/*background-color: #c0cce8;*/
+	/*padding: 2rem 2rem 0 2rem;*/
 	width: 90%;
 	overflow-wrap: break-word;
 }
+
+#day-dream {
+	background-color: #c0cce8;
+	padding: 2rem;
+}
+
+#sage-brush{
+	background-color: #D9DFD5;
+    padding: 2rem;
+}
+
+#petal {
+	background-color: #F7EFED;
+    padding: 2rem;
+}
+
+#flower-power {
+	background-color: #E9D9E6;
+    padding: 2rem;
+}
+
+#paisley {
+	background-color: #E3B798;
+    padding: 2rem;
+}
+
+#moss {
+	background-color: #B4B49F;
+    padding: 2rem;
 }
 
 .center-content {
@@ -166,18 +195,18 @@ section {
 	font-family: Neue Plak;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 1.5em;
 	line-height: 41px;
 	color: #000000;
 	margin-left: 50px;
-	letter-spacing: 0.15rem;
+	letter-spacing: 0.13rem;
 }
 
 .action-content{
 	border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 15px;
-	padding: 15em 50px 5em;
+	padding: 3em;
 	text-align: left;
 }
 
@@ -201,7 +230,7 @@ section {
 }
 
 .action-phrase {
-	margin-top: 10em;
+	margin-top: 8em;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
