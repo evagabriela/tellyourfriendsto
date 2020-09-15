@@ -63,6 +63,29 @@ p {
 	line-height: 1.4;
 }
 
+#day-dream a {
+	font-family: 'Blackest Text';
+}
+
+#sage-brush a {
+	font-family: 'Blackest Text';
+}
+
+#petal a {
+	font-family: 'Saira Semi Condensed';
+}
+#moss a {
+	font-family: 'Saira Semi Condensed';
+}	
+
+#flower-power a {
+	font-family: 'Work Sans';
+}
+
+#paisley a {
+	font-family: 'Work Sans';
+}
+
 
 /* ----------------------------------------
 Layout
@@ -211,7 +234,7 @@ section {
 }
 
 .action-content a {
-	font-family: Blackest Text;
+	/*font-family: Blackest Text;*/
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
@@ -390,3 +413,18 @@ footer input {
 
 
 }*/
+
+/* ----------------------------------------
+Viewports
+------------------------------------------- */
+@media screen and (min-width : 480px) {
+	}
+
+@media screen and (min-width : 768px) {
+	}
+
+@media screen and (min-width : 992px) {
+	}
+
+@media screen and (min-width : 1200px) {
+	}
