@@ -63,26 +63,26 @@ p {
 	line-height: 1.4;
 }
 
-#day-dream a {
+.day-dream a {
 	font-family: 'Blackest Text';
 }
 
-#sage-brush a {
+.sage-brush a {
 	font-family: 'Blackest Text';
 }
 
-#petal a {
+.petal a {
 	font-family: 'Saira Semi Condensed';
 }
-#moss a {
+.moss a {
 	font-family: 'Saira Semi Condensed';
-}	
+}
 
-#flower-power a {
+.flower-power a {
 	font-family: 'Work Sans';
 }
 
-#paisley a {
+.paisley a {
 	font-family: 'Work Sans';
 }
 
@@ -98,7 +98,7 @@ section {
 }
 
 .wrapper {
-	height: auto;      
+	height: auto;
     min-height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -158,34 +158,34 @@ section {
     margin-left: 90%;
 }
 
-#action-card {
+#action-cards {
 	/*background-color: #c0cce8;*/
 	/*padding: 2rem 2rem 0 2rem;*/
 	width: 90%;
 	overflow-wrap: break-word;
 }
 
-#day-dream {
+.day-dream {
 	background-color: #c0cce8;
 	padding: 2rem;
 }
 
-#sage-brush{
+.sage-brush{
 	background-color: #D9DFD5;
     padding: 2rem;
 }
 
-#petal {
+.petal {
 	background-color: #F7EFED;
     padding: 2rem;
 }
 
-#flower-power {
+.flower-power {
 	background-color: #E9D9E6;
     padding: 2rem;
 }
 
-#paisley {
+.paisley {
 	background-color: #E3B798;
     padding: 2rem;
 }
@@ -308,7 +308,7 @@ p.nextpar {
 
 .col-third {
 	width: 32%;
-	
+
 }
 
 .about-background{
@@ -366,7 +366,7 @@ button:hover {
 	font-weight: 600;
 }
 
-.grid-wrapper button {	
+.grid-wrapper button {
 	margin-top: 30px;
 }
 */
