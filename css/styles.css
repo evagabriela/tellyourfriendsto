@@ -1,11 +1,11 @@
 /* main css */
 
 
-div.tell {
+div.action-card {
   display: none;
 }
 
-div.tell.selected {
+div.action-card.selected {
   display: block;
 }
 
