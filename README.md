@@ -15,6 +15,12 @@ You can interact with actions by clicking:
 
 The site just loads all the HTML hidden from view, and then uses jquery to randomly pick a action (sometimes scoped to a hashtag).
 There's a ruby script that helps generate the HTML from plain text - this is just a helper.
+
+```console
+# from the project root
+ruby src/scripts/text_to_html.rb
+```
+
 The HTML is saved into snippets which you can modify and are the main source of truth for the site.
 You can just manually write your own snippets instead of generating them.
 Just `cat` all the HTML snippets and manually update the contents of index.html if there are changes.

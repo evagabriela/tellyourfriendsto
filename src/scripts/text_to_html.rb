@@ -21,11 +21,12 @@ class Action
         <p class='firstpar'>
           Would you use your voice, your body, your money, your time?
         </p>
-        <p class="nextpar">What particular causes will you get involved with?</p>
+        <p class='nextpar'>What particular causes will you get involved with?</p>
       </div>
     </div>
   </div>
-</div>"
+</div>
+"
   end
 
   def custom_css
@@ -76,7 +77,7 @@ def load_actions
 end
 
 def extract_actions
-  @actions = @raw_text.split("\n\n").reject { |t| t.strip.empty? }.map { |t, i| Action.new(t, i) }
+  @actions = @raw_text.split("\n\n").reject { |t| t.strip.empty? }.map.with_index { |t, i| Action.new(t, i) }
 end
 
 def generate_html
