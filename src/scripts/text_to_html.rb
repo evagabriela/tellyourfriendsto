@@ -1,33 +1,51 @@
-
 class Action
-  def initialize(text)
+  CSS_STYLES = %w[day-dream sage-brush petal moss flower-power paisley].freeze
+
+  def initialize(text, index)
     @text = text
+    @index = index
   end
 
   def to_html
-    css = ('action ' + hashtags.map { |h| h.downcase }.join(' ')).strip
+    css = ("action-card #{custom_css} " + hashtags.map { |h| h.downcase }.join(' ')).strip
     action_html = augment(text_without_hashtags)
     "<div class='#{css}'>
-  <p>#{action_html}</p>
-  <span class='hashtag'>
-    #{hashtag_html}
-  </span>
+  <div class='action-subtitle'>
+    <h1>Tell Your Friends to</h1>
+  </div>
+  <div class='action-content'>
+    <div>
+      <h1><a href='#'>#{action_html}</a>
+      </h1>
+      <div class='action-phrase'>
+        <p class='firstpar'>
+          Would you use your voice, your body, your money, your time?
+        </p>
+        <p class="nextpar">What particular causes will you get involved with?</p>
+      </div>
+    </div>
+  </div>
 </div>"
   end
 
+  def custom_css
+    CSS_STYLES[@index % CSS_STYLES.length]
+  end
+
   def persist
-    filename = text_without_hashtags.split(" ")[0..4].join("_").gsub(/\W/, '').downcase + ".html"
-    File.open("src/html_snippets/" + filename, "w") { |f| f.write self.to_html }
+    filename = text_without_hashtags.split(' ')[0..4].join('_').gsub(/\W/, '').downcase + '.html'
+    File.open('src/html_snippets/' + filename, 'w') { |f| f.write to_html }
   end
 
   private
+
   def text_without_hashtags
-    @text.split(" ").reject { |word| word.start_with?("#") }.join(" ").chomp
+    @text.split(' ').reject { |word| word.start_with?('#') }.join(' ').chomp
   end
 
   # returns the hashtags parsed from the text without '#'
   def hashtags
-    @text.split(" ").select { |word| word.start_with?("#") }.map { |word| word.gsub('#', '') }
+    @text.split(' ').select { |word| word.start_with?('#') }.map { |word| word.gsub('#', '') }
   end
 
   def hashtag_html
@@ -37,9 +55,9 @@ class Action
   end
 
   def augment(content)
-    content.split(" ").map do |word|
-      if word.include?("http")
-        if word.include?("youtube.com")
+    content.split(' ').map do |word|
+      if word.include?('http')
+        if word.include?('youtube.com')
           src = word.gsub('watch', 'embed')
           "<iframe width='560' height='315' src='#{src}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
         else
@@ -48,17 +66,17 @@ class Action
       else
         word
       end
-    end.join(" ")
+    end.join(' ')
   end
 end
 
 def load_actions
-  path = File.join(File.dirname(__FILE__), "actions.txt")
+  path = File.join(File.dirname(__FILE__), 'actions.txt')
   @raw_text = File.read(path)
 end
 
 def extract_actions
-  @actions = @raw_text.split("\n\n").reject { |t| t.strip.empty? }.map { |t| Action.new(t) }
+  @actions = @raw_text.split("\n\n").reject { |t| t.strip.empty? }.map { |t, i| Action.new(t, i) }
 end
 
 def generate_html
