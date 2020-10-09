@@ -8,25 +8,33 @@
     <meta name="description" content="A simple site that cycles through one simple thought, suggestion, action... at random every time the site refreshes.">
     <meta name="author" content="https://tellyourfriendsto.github.io/">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet"></>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300&family=Saira+Semi+Condensed&display=swap" rel="stylesheet"></>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
   </head>
 
   <body>
-    <header>
-      <h1>Tell your friends to</h1>
-    </header>
+    <div class="top-banner">
+       <h1>101 Days since Breona Taylor's Murder . </h1>
+     </div>
 
-    MAIN_CONTENT
 
-    <footer>
-      See more
-      <span class="hashtag">
-        <a href="#action">#ACTION</a>
-        <a href="#realtalk">#REALTALK</a>
-        <a href="#">clear</a>
-      </span>
-    </footer>
+     <section class="wrapper">
+       <div id="action-cards">
+         MAIN_CONTENT
+       </div>
+
+       <div class="vertical-navbar">
+         <div class="navbar-bottom">
+           <ul>
+             <li><a href="#about">About</a></li>
+             <li><a href="#gallery">Insta</a></li>
+           </ul>
+         </div>
+       </div>
+     </section>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="javascript/script.js"></script>
